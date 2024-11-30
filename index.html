@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/STYle.css">
+</head>
+<body>
+<main>
+
+    <div class="container  ">
+
+        <h1 class="display-5 m-auto mt-5 position-relative text-center">Bookmarker</h1>
+
+        <hr>
+
+       <div class="mt-4 text-center">
+            <i class="fa-solid fa-bookmark d-inline fs-4 "></i>
+            <h3 class="d-inline fs-3"> Bookmark your favorite sites </h3>
+            <i class="fa-solid fa-bookmark d-inline fs-4"></i>
+       </div>
+
+       <div >
+            <div class="mt-5">
+                    <label for="Sname" class="mb-2">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    Site Name
+                    </label>
+                    <input type="text" id="Sname" class="form-control" placeholder="Bookmark Name">
+            </div>
+
+            <div class="mt-5">
+                    <label for="Surl" class="mb-2">
+                    <i class="fa-solid fa-link"></i>
+                    Site URL
+                    </label>
+                    <input type="text" id="Surl" class="form-control" placeholder="Website URL">
+            </div>
+
+            <div class="text-center">
+                <button onclick="AddBookmark()" id="submit" class="btn bg-danger m-4 px-5 fs-5 text-light">Submit</button>
+                <button onclick="displayUpdate ()" id="update" class="btn bg-warning m-4 px-5 fs-5 text-light d-none">Update</button>
+
+              </div>
+       </div>
+       
+       <hr>
+
+       <table class="table text-center">
+        <thead>
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Website Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Update</th>
+          </tr>
+        </thead>
+        <tbody id="body">
+          <tr>
+
+
+
+
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+
+
+</main>
+
+    
+    
+        
+        
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/MAin.js"></script>
+</body>
+</html>
+
+
+
